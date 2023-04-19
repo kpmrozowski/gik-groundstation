@@ -22,7 +22,13 @@ RUN apt update &&\
  clangd-12 &&\
     pip install serial pyserial
 
-RUN echo "alias runTachimetr=\"sudo rfcomm bind rfcomm0 00:12:F3:43:5C:F7\"" >> ~/.bash_aliases
+ARG MASTER_URI
+ARG ROS_IP
+
+RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc &&\
+    echo "export ROS_MASTER_URI=${MASTER_URI}" >> ~/.bashrc &&\
+    echo "export ROS_IP=${ROS_IP}" >> ~/.bashrc &&\
+    echo "alias runTachimetr=\"sudo rfcomm bind rfcomm0 00:12:F3:43:5C:F7\"" >> ~/.bash_aliases
 
 # Set up auto-source of workspace for root user
 ARG WORKSPACE

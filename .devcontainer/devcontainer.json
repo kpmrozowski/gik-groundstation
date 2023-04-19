@@ -8,7 +8,10 @@
             "LIBGLVND_VERSION": "v1.1.0",
             "BUILD_VERSION": "4.0.1",
             "ONBOARD_SDK_VERSION": "4.0.1", // '4.1.0' '4.0.1' '4.0.0'
-            "BUILD_DATE": "$(date -u +'%Y-%m-%d-%H:%M:%S')"
+            "BUILD_DATE": "$(date -u +'%Y-%m-%d-%H:%M:%S')",
+			// "MASTER_URI": "http://192.168.43.144:11311",
+			"MASTER_URI": "http://192.168.1.103:11311",
+			"ROS_IP": "192.168.1.102"
         }
     },
     "remoteUser": "root",
@@ -19,7 +22,7 @@
         "--volume=/home/dron/repos/shm-gik-groundstation:/shm:rw",
         "--volume=/var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:ro",
         "--volume=/dev:/dev",
-        // "--volume=/home/dron/.ssh:/home/dron/.ssh",
+        "--volume=/home/dron/.ssh:/home/dron/.ssh",
         "--privileged"
     ],
     // "workspaceFolder": "/gik-groundstation/workspace",
