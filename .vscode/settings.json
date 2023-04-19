@@ -1,0 +1,105 @@
+{
+    "clangd.path": "clangd-12",
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--completion-style=detailed",
+        "--header-insertion=never"
+    ],
+    "C_Cpp.default.compileCommands": "/workspace/compile_commands.json",
+    "clang-format.executable": "clang-format-12",
+    "ros.distro": "noetic",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/noetic/lib/python3.8/dist-packages"
+    ],
+    "fileTemplates.templates_dir": "/home/developer/templates",
+    "files.associations": {
+        "*.launch": "xml",
+        "*.test": "xml",
+        "*.urdf.xacro": "xml",
+        "*.urdf": "xml",
+        "model.config": "xml",
+        "*.sdf": "xml",
+        "*.world": "xml"
+    },
+    "xml.fileAssociations": [
+        {
+            "systemId": "/opt/xsd/package.xml/package_format2.xsd",
+            "pattern": "package.xml"
+        },
+        {
+            "systemId": "/opt/xsd/roslaunch/roslaunch.xsd",
+            "pattern": "**/*.launch"
+        },
+        {
+            "systemId": "/opt/xsd/roslaunch/roslaunch.xsd",
+            "pattern": "**/*.test"
+        },
+        {
+            "systemId": "/opt/xsd/urdf/urdf.xsd",
+            "pattern": "**/*.urdf.xacro"
+        },
+        {
+            "systemId": "/opt/xsd/urdf/urdf.xsd",
+            "pattern": "**/*.urdf"
+        },
+        {
+            "systemId": "/opt/xsd/sdf/root.xsd",
+            "pattern": "**/*.sdf"
+        },
+        {
+            "systemId": "/opt/xsd/sdf/root.xsd",
+            "pattern": "**/*.world"
+        }
+    ],
+    "C_Cpp.intelliSenseCacheSize": 0,
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    // "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "python.pythonPath": "/usr/bin/python",
+    "python.showStartPage": false,
+    "python.analysis.extraPaths": [
+        "/opt/ros/noetic/lib/python3.8/dist-packages"
+    ],
+    "cSpell.words": [
+        "calib",
+        "depthmap",
+        "disp",
+        "DISPLAYMODE",
+        "DSTATUS",
+        "Eigen",
+        "FILEMGR",
+        "Fusioned",
+        "HOMEPOINT",
+        "IMREAD",
+        "imwrite",
+        "KITTI",
+        "LANDINGGEAR",
+        "nmea",
+        "ONBOARDSDK",
+        "Osal",
+        "OSDK",
+        "Radziwie",
+        "reproject",
+        "RGBD",
+        "Sophus",
+        "spdlog",
+        "ssgm",
+        "Targowa",
+        "undis",
+        "undistort",
+        "USBACM"
+    ],
+    "editor.scrollbar.verticalScrollbarSize": 2,
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "terminal.integrated.scrollback": 2000,
+    "editor.cursorSurroundingLines": 5,
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.sharedViewState": false,
+    "workbench.editor.scrollToSwitchTabs": true,
+    "editor.fontSize": 14,
+    "[cpp]": {
+        "editor.tabSize": 4,
+        "editor.indentSize": "tabSize"
+    }
+}
