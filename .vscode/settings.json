@@ -91,7 +91,7 @@
     "editor.scrollbar.verticalScrollbarSize": 2,
     "editor.smoothScrolling": true,
     "workbench.list.smoothScrolling": true,
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": "on",
     "terminal.integrated.scrollback": 2000,
     "editor.cursorSurroundingLines": 5,
     "workbench.editor.wrapTabs": true,

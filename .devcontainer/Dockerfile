@@ -20,7 +20,7 @@ RUN apt update &&\
  x11-apps \
  python3-pip \
  clangd-12 &&\
-    pip install serial pyserial
+    pip install serial pyserial pyproj
 
 ARG MASTER_URI
 ARG ROS_IP
